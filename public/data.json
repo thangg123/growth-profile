@@ -3,207 +3,171 @@
   "analyst": "Claude AI (Opus 4.6)",
   "skills": [
     {
-      "id": "tech-exec",
-      "name": "Technical Execution",
-      "icon": "⚡",
-      "score": 85,
+      "id": "tooling",
+      "name": "Tooling & Automation",
+      "icon": "🔧",
+      "score": 82,
       "maxScore": 100,
       "trend": "up",
       "category": "core",
-      "details": "iOS, Android, Web, Node.js, Backend Services, PM2, VPS, RTSP, AI",
-      "summary": "Full-stack ở mức ecosystem: cross-platform mobile (iOS + Android), multiple web apps, backend service jobs, server infrastructure, hardware integration (RTSP camera, projector), AI products. Quản lý server cho toàn bộ BE services. Đây là technical execution ở tầm CTO, không phải individual contributor.",
+      "details": "Custom plugins, MCP servers, CLI tools, Internal dev tooling",
+      "summary": "Builder initiative mạnh — tự identify pain point rồi quyết định build, không chờ tool có sẵn. Hướng đi đúng (testcase → MCP → slash command), execution cần iteration nhưng direction luôn hợp lý. Với 9+ products và team 8 người, internal tooling là force multiplier quan trọng. Gap: chưa publish tools ra ngoài.",
       "evidence": [
-        "Cross-platform mobile: Arena App trên cả iOS và Android",
-        "Multiple web platforms: ARX, CRM, Sales, Tournament",
-        "Android native: Bảng điểm billiard app",
-        "Backend service jobs: multiple services chạy production",
-        "Server infrastructure: quản lý VPS, PM2, RAM/CPU, swap, firewall cho tất cả BE",
-        "Hardware integration: RTSP camera setup, AI Mission máy chiếu",
-        "Security: WAF evaluation, ufw/iptables, WordPress hardening"
+        "Tự khởi xướng build testcase generator — identify nhu cầu QA rồi tự giải quyết",
+        "Iterate qua nhiều platform (CF Workers → Desktop plugin → CLI command) — adapt tốt",
+        "Arena-spec skill: tự build interactive feature spec generator phù hợp workflow",
+        "Claude Code CLI custom config, commands — tự explore ecosystem không cần hướng dẫn",
+        "Internal tooling phục vụ team 8 người × 9+ products"
       ],
       "nextSteps": [
-        "Docker + Docker Compose cho toàn bộ BE services",
-        "CI/CD pipeline auto deploy cho tất cả platforms (mobile + web + BE)",
-        "Monitoring stack: Grafana + Prometheus cho all services",
-        "Infrastructure as Code (Terraform/Ansible)"
-      ]
-    },
-    {
-      "id": "system-arch",
-      "name": "System Thinking & Architecture",
-      "icon": "🧠",
-      "score": 86,
-      "maxScore": 100,
-      "trend": "up",
-      "category": "core",
-      "details": "Multi-platform architecture, Backend services, Server infra, AI pipeline",
-      "summary": "Kiến trúc cho hệ sinh thái phức tạp: iOS + Android apps → multiple web apps → backend service jobs → server infrastructure → hardware (RTSP, projector) → AI. Mỗi layer có architecture riêng và cần orchestrate cùng nhau. Đây là complexity level CTO ở growth-stage startup.",
-      "evidence": [
-        "Architecture cho 9+ products spanning mobile, web, hardware, AI",
-        "Backend service jobs orchestration — multiple services chạy song song",
-        "Server infrastructure design cho toàn bộ BE stack",
-        "ARX V.1 service decomposition, per-service WebSocket servers",
-        "RTSP camera streaming + AI projector pipeline",
-        "Impact/Effort scoring cho prioritization across products",
-        "Networking: NAT, CGNAT, DHCP, IP conflict resolution"
-      ],
-      "nextSteps": [
-        "System architecture diagram toàn bộ ecosystem (C4 model)",
-        "Event-driven architecture cho inter-service communication",
-        "Caching layer (Redis) cho high-traffic products",
-        "Load testing & performance benchmarks (k6, Artillery)",
-        "Disaster recovery plan cho production services"
+        "Publish testcase plugin lên npm với professional docs",
+        "Xây internal developer portal cho team",
+        "Open-source 1 tool có giá trị cho cộng đồng",
+        "Automate deployment pipeline across products"
       ]
     },
     {
       "id": "spec-writing",
       "name": "Spec Writing & Requirements",
       "icon": "📋",
-      "score": 82,
+      "score": 78,
       "maxScore": 100,
       "trend": "up",
       "category": "core",
-      "details": "Feature spec, Epic/Sprint planning, Multi-product roadmap, QA methodology",
-      "summary": "Viết spec chi tiết với coverage rộng. Quản lý requirements cho nhiều products + platforms cùng lúc. Có structured QA approach (testcase methodology). Nâng thêm bằng metrics-driven criteria và cross-product dependency mapping.",
+      "details": "Feature spec, Epic/Sprint planning, Edge case analysis, QA methodology",
+      "summary": "Hiểu domain sâu — liệt kê edge cases trước khi được hỏi (CTKM qua ngày: khung giờ, cố định, khác ngày). AR2-17 cover 9 report types chi tiết. Biết link cross-dependencies (PPL-471, PPL-472, CRM-1205). Có thể nâng thêm bằng metrics-driven acceptance criteria.",
       "evidence": [
         "Epic AR2-17 Report Module — 9 report types, timezone handling, data sync",
-        "Sprint planning cho multiple products cùng lúc",
-        "Testcase generation methodology — structured QA approach",
-        "Feature spec với interactive simulation (arena-spec skill)",
-        "Cross-platform requirements: iOS + Android + Web consistency"
+        "CTKM qua ngày spec: tự liệt kê 5+ edge cases trước khi được hỏi",
+        "Cross-reference dependencies: PPL-471, PPL-472, CRM-1205 — hiểu system linkage",
+        "Sprint T.4 planning có cấu trúc, phân task hợp lý",
+        "Testcase methodology: structured QA approach"
       ],
       "nextSteps": [
-        "Cross-product dependency map cho 9+ products",
+        "Thêm success metrics gắn với mỗi feature shipped",
         "BDD acceptance criteria (Given/When/Then)",
-        "Success metrics gắn với mỗi feature shipped",
-        "RFC/Design Doc template chuẩn cho team sử dụng"
-      ]
-    },
-    {
-      "id": "tooling",
-      "name": "Tooling & Automation",
-      "icon": "🔧",
-      "score": 92,
-      "maxScore": 100,
-      "trend": "up",
-      "category": "core",
-      "details": "Custom plugins, MCP servers, CLI tools, Internal dev tooling",
-      "summary": "Builder mindset nổi bật nhất trong profile. Với 9+ products và team 8 người, internal tooling là force multiplier cực kỳ quan trọng. Đã build: testcase generator, spec generator, workflow automation. Gap: chưa publish ra ngoài ecosystem.",
-      "evidence": [
-        "Testcase generator: CF Workers MCP → Claude Desktop plugin → slash command",
-        "Multi-Agent MD Generator HTML app",
-        "Arena-spec skill: interactive feature spec generator",
-        "Claude Code CLI custom config, commands, workflows",
-        "Git co-authorship automation",
-        "Internal tooling phục vụ team 8 người × 9+ products"
-      ],
-      "nextSteps": [
-        "Publish testcase plugin lên npm với professional docs",
-        "Internal developer portal — tập trung tất cả tools cho team",
-        "Automate deployment pipeline across all products",
-        "Open-source 1 tool có giá trị cho billiard tech community"
-      ]
-    },
-    {
-      "id": "product-strategy",
-      "name": "Product Strategy & Metrics",
-      "icon": "📊",
-      "score": 70,
-      "maxScore": 100,
-      "trend": "up",
-      "category": "core",
-      "details": "Multi-product roadmap, Cross-platform strategy, Market positioning",
-      "summary": "Định hướng sản phẩm cho ecosystem phức tạp: consumer app (iOS/Android) + B2B SaaS (ARX, CRM) + e-commerce (Sales) + hardware + AI. Product portfolio phủ toàn bộ chuỗi giá trị billiard. Chiến lược mở rộng sang AI (Mission, Tournament) là strategic bet đúng hướng. Gap chính: data-driven decisions — nếu bổ sung analytics sẽ tăng nhanh.",
-      "evidence": [
-        "Product direction cho ecosystem: consumer + B2B + hardware + AI",
-        "Cross-platform strategy: iOS + Android + Web — consistency decisions",
-        "Resource allocation: 8 người × 9+ products — prioritization hàng ngày",
-        "Market positioning: phủ toàn bộ chuỗi giá trị billiard VN",
-        "Strategic expansion vào AI: Mission (projector) + Tournament",
-        "Backend service orchestration — technical product decisions"
-      ],
-      "nextSteps": [
-        "Analytics cho top 3 products (Arena App, ARX, CRM)",
-        "North Star Metric cho từng product line",
-        "5 user interviews: club owners + players → validate roadmap",
-        "Product portfolio matrix: Star / Cash Cow / Question Mark",
-        "Competitive landscape map cho billiard management market VN"
-      ]
-    },
-    {
-      "id": "leadership",
-      "name": "Leadership & Team Management",
-      "icon": "👥",
-      "score": 68,
-      "maxScore": 100,
-      "trend": "up",
-      "category": "core",
-      "details": "Team 8 người, 9+ products, iOS/Android/Web/BE/AI/Hardware",
-      "summary": "Lead team 8 người ship 9+ products across 6+ platforms (iOS, Android, Web, Backend, Hardware, AI). Đây là workload CTO + Head of Product cộng lại. Team cực kỳ lean cho scope này — đòi hỏi management hiệu quả và ưu tiên tốt. Cần structured processes để scale team và tránh burnout (cho cả Thang và team).",
-      "evidence": [
-        "Quản lý team 8 người across iOS, Android, Web, BE, Hardware, AI",
-        "Vừa product direction vừa infrastructure management vừa hands-on",
-        "Resource allocation cho 9+ products — prioritization decisions hàng ngày",
-        "Managed backend service infrastructure cho toàn bộ platform",
-        "Reflection về evolving PM/PO role — strong self-awareness"
-      ],
-      "nextSteps": [
-        "RACI matrix: ai own product nào, responsibilities rõ ràng",
-        "Weekly 1:1 framework — develop product owners per product line",
-        "Identify 1-2 team members mentor thành tech lead / product lead",
-        "Đọc: An Elegant Puzzle (Will Larson) — engineering management",
-        "Quarterly OKR cho từng product line"
-      ]
-    },
-    {
-      "id": "visibility",
-      "name": "Public Visibility & Branding",
-      "icon": "🌐",
-      "score": 15,
-      "maxScore": 100,
-      "trend": "stable",
-      "category": "growth",
-      "details": "Blog, Portfolio, Open-source, Community, Company branding",
-      "summary": "Public presence thấp nhất trong profile — nhưng Thang đang ngồi trên 'goldmine content'. Câu chuyện '8 người build 9+ products across 6 platforms' là cực kỳ compelling cho tech community. Nếu bắt đầu chia sẻ, sẽ attract talent, investors, và partnerships.",
-      "evidence": [
-        "GitHub thangg123 ít active — focus vào management & infra",
-        "Chưa có blog/writing public",
-        "Chưa có portfolio/case study",
-        "Chưa có engineering blog cho Arena Billiard",
-        "Câu chuyện building billiard platform chưa được kể"
-      ],
-      "nextSteps": [
-        "1 bài/tháng: lessons từ building billiard ecosystem với lean team",
-        "Arena Billiard engineering blog — team cùng viết",
-        "LinkedIn: 1 post/tuần về product/tech leadership insights",
-        "Case study: 'Từ 0 đến 9 sản phẩm với 8 người' — rất có giá trị",
-        "Tham gia 1 startup/tech community ở HCMC"
+        "Cross-product dependency map cho 9+ products",
+        "RFC/Design Doc template chuẩn cho team"
       ]
     },
     {
       "id": "ai-workflow",
       "name": "AI Products & Workflow",
       "icon": "🤖",
-      "score": 92,
+      "score": 76,
       "maxScore": 100,
       "trend": "up",
       "category": "emerging",
       "details": "AI Mission, AI Tournament, Claude Code, MCP, Multi-agent",
-      "summary": "Đang ở rare position: vừa build AI products (AI Mission projector, AI Tournament) vừa master AI dev tools (Claude Code, MCP). Kết hợp AI + billiard vertical = unique niche có thể own. Computer vision cho billiard scoring là logical next step.",
+      "summary": "Không chỉ dùng AI mà tự explore ecosystem (Claude Code → MCP → plugins → custom skills). Đang build AI products (AI Mission projector, AI Tournament) — hiếm PM làm được điều này. Tuy nhiên chưa rõ output quality của AI products (accuracy, user feedback). Tư duy chiến lược về AI role tốt: 'AI làm output, mình làm judgment'.",
       "evidence": [
-        "AI Mission: AI + máy chiếu — hardware-integrated AI product",
-        "AI Tournament: AI-powered tournament management",
-        "Claude Code CLI mastery: config, commands, permissions",
-        "MCP server ecosystem: testcase generation",
+        "AI Mission + AI Tournament: build AI products thực tế, không chỉ dùng AI tools",
+        "Claude Code ecosystem: tự explore từ config → commands → MCP → skills",
+        "Tư duy về PM role trong AI era: 'AI làm output, mình làm judgment'",
         "Multi-agent architecture exploration",
-        "AI applied to specific billiard vertical — domain expertise"
+        "Tự build MCP server, iterate qua nhiều deployment approach"
       ],
       "nextSteps": [
-        "Document AI product architecture (Mission + Tournament)",
-        "Computer vision: automatic billiard scoring from RTSP camera",
-        "AI analytics dashboard cho club owners",
-        "AI billiard use case articles — own this niche",
-        "Evaluate edge AI deployment cho camera-to-scoreboard pipeline"
+        "Document AI product architecture + performance metrics",
+        "Computer vision: automatic billiard scoring từ RTSP camera",
+        "Measure AI product quality: accuracy, user satisfaction",
+        "Share AI billiard use cases — own niche này"
+      ]
+    },
+    {
+      "id": "tech-exec",
+      "name": "Technical Execution",
+      "icon": "⚡",
+      "score": 72,
+      "maxScore": 100,
+      "trend": "stable",
+      "category": "core",
+      "details": "Node.js, iOS/Android, Web, PM2, VPS, RTSP, Firewall, Debug",
+      "summary": "Debug tốt: quan sát hiện tượng (CPU 77%) → thu thập data (top, pm2 logs) → xác định nguyên nhân (apport crash loop). Cover multi-platform thực tế. Tuy nhiên 9+ products vẫn chạy PM2 trên bare VPS, chưa Docker, chưa CI/CD, chưa monitoring stack — đó là technical debt cho hệ sinh thái này.",
+      "evidence": [
+        "Debug approach: thấy CPU cao → check process → trace root cause (crash loop → apport)",
+        "Multi-platform: iOS, Android, Web, Backend services, RTSP camera, AI projector",
+        "Server infra: quản lý VPS, PM2, RAM/CPU diagnostics, swap config, firewall",
+        "Security awareness: WAF evaluation, ufw/iptables, WordPress hardening",
+        "Xử lý được nhiều loại vấn đề khác nhau (DNS, thermal printer, crash loop)"
+      ],
+      "nextSteps": [
+        "Docker + Docker Compose cho BE services — ưu tiên cao nhất",
+        "CI/CD pipeline (GitHub Actions) cho auto deploy",
+        "Monitoring: Grafana + Prometheus hoặc tối thiểu UptimeRobot + PM2 metrics",
+        "Infrastructure as Code cho server management"
+      ]
+    },
+    {
+      "id": "system-arch",
+      "name": "System Thinking & Architecture",
+      "icon": "🧠",
+      "score": 68,
+      "maxScore": 100,
+      "trend": "up",
+      "category": "core",
+      "details": "Impact/Effort scoring, Service decomposition, Dependencies, Infra planning",
+      "summary": "Tư duy đánh giá trade-off tốt — Impact/Effort matrix cho ARX V.1 components cho thấy khả năng prioritize. Hiểu dependencies giữa services (PPL-471/472/CRM-1205). Tuy nhiên architecture planning vẫn collaborative (cùng Claude), chưa phải tự thiết kế hoàn chỉnh. Chưa có evidence về scaling, performance optimization, hay disaster recovery thực tế.",
+      "evidence": [
+        "Impact/Effort scoring cho 9 components ARX V.1 — prioritization có chiều sâu",
+        "Hiểu cross-system dependencies: billing, scoring, CTKM, CRM",
+        "Service decomposition concept: per-service WebSocket, decoupling",
+        "Networking fundamentals: NAT, CGNAT, DHCP, IP conflicts",
+        "Architecture cho multi-platform ecosystem (mobile, web, hardware, AI)"
+      ],
+      "nextSteps": [
+        "Tự vẽ system architecture diagram (C4 model) không cần hỗ trợ",
+        "Load testing + performance benchmarks cho top products",
+        "Event-driven architecture cho inter-service communication",
+        "Disaster recovery plan cho production"
+      ]
+    },
+    {
+      "id": "product-strategy",
+      "name": "Product Strategy & Metrics",
+      "icon": "📊",
+      "score": 55,
+      "maxScore": 100,
+      "trend": "stable",
+      "category": "growth",
+      "details": "Multi-product direction, Market positioning, Intuition-driven",
+      "summary": "Có product vision thật: phủ toàn bộ chuỗi giá trị billiard (consumer → B2B → hardware → AI). Bet vào AI là strategic move. Hiểu sâu domain (CLB hoạt động đến 2-3h sáng, CTKM qua ngày = cash leakage). Tuy nhiên quyết định thiên intuition, chưa data-driven. 9 products với 8 người — chưa rõ logic focus hay spread thin.",
+      "evidence": [
+        "Product vision: phủ full value chain billiard VN — consumer + B2B + hardware + AI",
+        "Domain expertise sâu: hiểu business context CLB (giờ mở cửa, CTKM, cash flow)",
+        "Strategic bet vào AI products (Mission, Tournament)",
+        "Evaluate team members có logic: 'PM không hiểu sản phẩm = người truyền tin'",
+        "Phản biện framework khi thấy không phù hợp context: 'mấy vị trí đó không cần thiết'"
+      ],
+      "nextSteps": [
+        "Setup analytics cho top 3 products — bắt đầu có data",
+        "Product portfolio review: product nào là core, product nào nên sunset?",
+        "5 user interviews: validate roadmap bằng evidence",
+        "Define North Star Metric cho từng product line"
+      ]
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership & Team Management",
+      "icon": "👥",
+      "score": 52,
+      "maxScore": 100,
+      "trend": "stable",
+      "category": "growth",
+      "details": "Team 8 người, Multi-product, Hands-on + Management",
+      "summary": "Team đang ship 9+ products — kết quả có, leadership ở mức nào đó hoạt động. Evaluate team members có logic (câu hỏi PM không hiểu sản phẩm). Standard cao + phản biện mạnh = có thể lead bằng quality bar. Tuy nhiên chưa thấy structured processes (1:1, retro, OKR). Vẫn hands-on nhiều — cần xác định đó là lựa chọn hay vì chưa delegate được.",
+      "evidence": [
+        "Team 8 người shipping 9+ products across 6 platforms — kết quả thực tế",
+        "Evaluate team members: đặt câu hỏi đúng về năng lực PM",
+        "Phản biện mạnh, standard cao — không chấp nhận output kém chất lượng",
+        "Tự reflect về PM/PO role evolution — self-awareness tốt",
+        "Hands-on server, debug, security — vừa manage vừa execute"
+      ],
+      "nextSteps": [
+        "RACI matrix: ownership rõ ràng cho 9+ products",
+        "Setup 1:1 framework + sprint retro",
+        "Identify 1-2 người mentor thành tech lead / product lead",
+        "Xác định rõ: tasks nào mình phải làm vs tasks nào delegate được"
       ]
     }
   ],
@@ -212,112 +176,103 @@
       "id": "cto-founder",
       "name": "CTO / Technical Co-Founder",
       "icon": "🏗️",
-      "fit": 90,
+      "fit": 82,
       "requirements": [
-        "System architecture (86)",
-        "Technical execution (85)",
-        "AI products (92)",
-        "Tooling (92)",
-        "Team leadership (68)",
+        "System thinking (68)",
+        "Technical execution (72)",
+        "AI products (76)",
+        "Tooling mindset (82)",
+        "Team leadership (52)",
         "Multi-platform experience"
       ],
       "gaps": [
-        "Engineering management training",
+        "Architecture độc lập (đang collaborative)",
+        "Modern infra practices",
         "Scaling team 8 → 20+",
-        "Investor/board communication",
-        "Budget & P&L ownership"
+        "Engineering management training"
       ]
     },
     {
       "id": "head-product",
       "name": "Head of Product / CPO",
       "icon": "🎯",
-      "fit": 74,
+      "fit": 68,
       "requirements": [
-        "Multi-product management (70)",
-        "Team leadership (68)",
-        "Spec writing (82)",
-        "Cross-platform strategy",
-        "Market understanding"
+        "Domain expertise sâu",
+        "Multi-product management",
+        "Spec writing (78)",
+        "Product vision",
+        "Critical thinking"
       ],
       "gaps": [
-        "Data-driven product decisions",
+        "Data-driven decisions (55)",
         "User research methodology",
-        "Product analytics stack",
-        "C-level stakeholder communication"
+        "Product analytics",
+        "Portfolio focus vs spread"
       ]
     },
     {
       "id": "indie-founder",
       "name": "Solo Founder (Indie SaaS)",
       "icon": "🚀",
-      "fit": 72,
+      "fit": 70,
       "requirements": [
-        "Full-stack execution (85)",
-        "Tooling (92)",
-        "AI workflow (92)",
-        "Product sense (70)"
+        "Full-stack execution (72)",
+        "Tooling (82)",
+        "AI workflow (76)",
+        "Product sense"
       ],
       "gaps": [
-        "Distribution & marketing (15)",
-        "Solo revenue model",
-        "Public presence",
-        "Note: Thang đã vượt giai đoạn indie — đang lead team & multi-product"
+        "Revenue model",
+        "Thang đã vượt giai đoạn indie — đang lead team multi-product"
       ]
     }
   ],
   "weeklyActions": [
     {
       "id": 1,
-      "text": "Setup analytics cho Arena App (iOS/Android) — track 5 core events",
+      "text": "Setup analytics cho Arena App — track 5 core events",
       "done": false,
       "priority": "high",
       "skill": "product-strategy"
     },
     {
       "id": 2,
-      "text": "Vẽ system architecture diagram toàn bộ ecosystem (C4 model)",
+      "text": "Vẽ system architecture diagram toàn bộ ecosystem (tự làm)",
       "done": false,
       "priority": "high",
       "skill": "system-arch"
     },
     {
       "id": 3,
-      "text": "Viết RACI matrix: ownership cho 9+ products trong team 8 người",
+      "text": "Viết RACI matrix: ownership cho 9+ products",
       "done": false,
       "priority": "high",
       "skill": "leadership"
     },
     {
       "id": 4,
-      "text": "Define North Star Metric cho Arena App + ARX + CRM",
+      "text": "Product portfolio review: core vs sunset candidates",
       "done": false,
       "priority": "high",
       "skill": "product-strategy"
     },
     {
       "id": 5,
-      "text": "Document AI Mission + AI Tournament architecture",
-      "done": false,
-      "priority": "medium",
-      "skill": "ai-workflow"
-    },
-    {
-      "id": 6,
-      "text": "Setup Docker Compose cho BE services",
+      "text": "Docker Compose cho ít nhất 1 BE service",
       "done": false,
       "priority": "medium",
       "skill": "tech-exec"
     },
     {
-      "id": 7,
-      "text": "Viết 1 LinkedIn post: lessons từ building billiard platform",
+      "id": 6,
+      "text": "Document AI Mission + AI Tournament: architecture + metrics",
       "done": false,
       "priority": "medium",
-      "skill": "visibility"
+      "skill": "ai-workflow"
     },
     {
-      "id": 8,
+      "id": 7,
       "text": "Chạy 3 user interviews với club owners",
       "done": false,
       "priority": "high",
