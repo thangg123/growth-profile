@@ -1,29 +1,36 @@
-# Thang's Dev Profile 🚀
+# Thang's Dev Profile ⚡
 
-Personal development dashboard — theo dõi năng lực, career path & action items.
+Dashboard phát triển năng lực cá nhân — phân tích bởi Claude AI.
 
-## Features
-- 📊 Radar chart năng lực tổng quan
-- 📋 Chi tiết từng skill với evidence & next steps  
-- 🎯 Career path analysis (PM / Tech Lead / Indie)
-- ✅ Weekly action items tracking
-- ✏️ Chỉnh sửa điểm trực tiếp, lưu localStorage
+## Cấu trúc
 
-## Deploy
+```
+├── public/
+│   ├── data.json       ← 🔥 FILE DUY NHẤT CẦN CẬP NHẬT
+│   └── favicon.svg
+├── src/
+│   ├── main.jsx
+│   └── App.jsx          ← UI, fetch data từ /data.json
+├── index.html
+└── package.json
+```
+
+## Cách cập nhật hàng ngày
+
+1. Chat với Claude AI trên [claude.ai](https://claude.ai) → yêu cầu đánh giá lại
+2. Claude xuất file `data.json` mới
+3. Vào GitHub → `public/data.json` → ✏️ Edit → Paste → Commit
+4. Vercel tự deploy (30 giây)
+
+**Không cần sửa code. Chỉ thay `data.json`.**
+
+## Local dev
 
 ```bash
 npm install
-npm run dev      # local dev
-npm run build    # production build
+npm run dev
 ```
 
-### Vercel
-1. Push repo lên GitHub
-2. Import project tại [vercel.com/new](https://vercel.com/new)
-3. Framework: **Vite** (auto-detect)
-4. Deploy!
+## Deploy Vercel
 
-## Tech
-- Vite + React
-- Pure CSS (no Tailwind)
-- localStorage for persistence
+Import repo từ GitHub → Framework: Vite → Deploy.
