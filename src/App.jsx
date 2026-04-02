@@ -167,7 +167,7 @@ export default function App() {
               <div className="mono" style={{ fontSize: 10, color: "#334155", marginBottom: 16 }}>Claude AI · Thang điểm 100 · {data.lastUpdated}</div>
               <RadarChart skills={data.skills} size={300} />
               <div style={{ marginTop: 18, display: "flex", justifyContent: "center", gap: 18, flexWrap: "wrap" }}>
-                {[{ l: "Core", c: "#0ea5e9" }, { l: "Growth", c: "#f59e0b" }, { l: "Emerging", c: "#a78bfa" }].map(x => (
+                {[{ l: "Core", c: "#0ea5e9", s: core }, { l: "Growth", c: "#f59e0b", s: growth }, { l: "Emerging", c: "#a78bfa", s: emerging }].filter(x => x.s.length > 0).map(x => (
                   <div key={x.l} style={{ display: "flex", alignItems: "center", gap: 6 }}>
                     <div style={{ width: 8, height: 8, borderRadius: 2, background: x.c }} /><span style={{ fontSize: 11, color: "#64748b" }}>{x.l}</span>
                   </div>
@@ -178,7 +178,7 @@ export default function App() {
               {[{ title: "Core Skills", skills: core, color: "#0ea5e9", emoji: "🔵" },
                 { title: "Growth Areas", skills: growth, color: "#f59e0b", emoji: "🟡" },
                 { title: "Emerging", skills: emerging, color: "#a78bfa", emoji: "🟣" }
-              ].map((g, gi) => (
+              ].filter(g => g.skills.length > 0).map((g, gi) => (
                 <div key={gi} style={{ marginBottom: 28 }}>
                   <div className="mono group-label" style={{ color: g.color }}>{g.emoji} {g.title.toUpperCase()}</div>
                   {g.skills.map((sk, si) => (
