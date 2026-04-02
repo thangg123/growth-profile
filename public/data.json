@@ -177,109 +177,33 @@
       "name": "CTO",
       "icon": "🏗️",
       "fit": 78,
-      "requirements": [
-        "Tooling mindset (82)",
-        "Spec writing (78)",
-        "Technical execution (72)",
-        "System architecture (68)",
-        "AI management (68)",
-        "Server infrastructure ownership"
-      ],
-      "gaps": [
-        "Modern infra: Docker, CI/CD, monitoring",
-        "Architecture độc lập (đang collaborative)",
-        "Scaling team 8 → 20+",
-        "Engineering management training"
-      ]
+      "requirements": ["Tooling mindset (82)", "Spec writing (78)", "Technical execution (72)", "System architecture (68)", "AI management (68)", "Server infrastructure ownership"],
+      "gaps": ["Modern infra: Docker, CI/CD, monitoring", "Architecture độc lập (đang collaborative)", "Scaling team 8 → 20+", "Engineering management training"]
     },
     {
       "id": "vp-engineering",
       "name": "VP Engineering / Head of Engineering",
       "icon": "⚙️",
       "fit": 72,
-      "requirements": [
-        "Team management",
-        "Technical execution (72)",
-        "Quality standards cao",
-        "Multi-platform delivery",
-        "Infra ownership"
-      ],
-      "gaps": [
-        "Structured engineering processes (52)",
-        "Team scaling & hiring",
-        "Engineering metrics (velocity, quality, reliability)",
-        "Delegation framework"
-      ]
+      "requirements": ["Team management", "Technical execution (72)", "Quality standards cao", "Multi-platform delivery", "Infra ownership"],
+      "gaps": ["Structured engineering processes (52)", "Team scaling & hiring", "Engineering metrics (velocity, quality, reliability)", "Delegation framework"]
     },
     {
       "id": "technical-head-product",
       "name": "Technical Head of Product",
       "icon": "🎯",
       "fit": 70,
-      "requirements": [
-        "Spec writing (78)",
-        "Domain expertise billiard",
-        "Product direction",
-        "Quality mindset",
-        "Tech + product kết hợp"
-      ],
-      "gaps": [
-        "Product analytics & data-driven (55)",
-        "User research methodology",
-        "Product quality metrics (NPS, CSAT, retention)",
-        "Cross-functional stakeholder management"
-      ]
+      "requirements": ["Spec writing (78)", "Domain expertise billiard", "Product direction", "Quality mindset", "Tech + product kết hợp"],
+      "gaps": ["Product analytics & data-driven (55)", "User research methodology", "Product quality metrics (NPS, CSAT, retention)", "Cross-functional stakeholder management"]
     }
   ],
   "weeklyActions": [
-    {
-      "id": 1,
-      "text": "Setup analytics cho Arena App — track 5 core events",
-      "done": false,
-      "priority": "high",
-      "skill": "product-strategy"
-    },
-    {
-      "id": 2,
-      "text": "Vẽ system architecture diagram toàn bộ ecosystem (tự làm)",
-      "done": false,
-      "priority": "high",
-      "skill": "system-arch"
-    },
-    {
-      "id": 3,
-      "text": "Viết RACI matrix: ownership cho 9+ products",
-      "done": false,
-      "priority": "high",
-      "skill": "leadership"
-    },
-    {
-      "id": 4,
-      "text": "Product portfolio review: core vs sunset candidates",
-      "done": false,
-      "priority": "high",
-      "skill": "product-strategy"
-    },
-    {
-      "id": 5,
-      "text": "Docker Compose cho ít nhất 1 BE service",
-      "done": false,
-      "priority": "medium",
-      "skill": "tech-exec"
-    },
-    {
-      "id": 6,
-      "text": "Define success metrics cho AI Mission + AI Tournament",
-      "done": false,
-      "priority": "medium",
-      "skill": "ai-workflow"
-    },
-    {
-      "id": 7,
-      "text": "Chạy 3 user interviews với club owners",
-      "done": false,
-      "priority": "high",
-      "skill": "product-strategy"
-    }
+    { "id": 1, "text": "Setup analytics cho Arena App — track 5 core events", "done": false, "priority": "high", "skill": "product-strategy" },
+    { "id": 2, "text": "Vẽ system architecture diagram toàn bộ ecosystem (tự làm)", "done": false, "priority": "high", "skill": "system-arch" },
+    { "id": 3, "text": "Viết RACI matrix: ownership cho 9+ products", "done": false, "priority": "high", "skill": "leadership" },
+    { "id": 4, "text": "Product portfolio review: core vs sunset candidates", "done": false, "priority": "high", "skill": "product-strategy" },
+    { "id": 5, "text": "Docker Compose cho ít nhất 1 BE service", "done": false, "priority": "medium", "skill": "tech-exec" },
+    { "id": 6, "text": "Define success metrics cho AI Mission + AI Tournament", "done": false, "priority": "medium", "skill": "ai-workflow" },
+    { "id": 7, "text": "Chạy 3 user interviews với club owners", "done": false, "priority": "high", "skill": "product-strategy" }
   ]
 }
