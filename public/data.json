@@ -1,11 +1,6 @@
 {
   "lastUpdated": "2026-04-02",
   "analyst": "Claude AI (Opus 4.6)",
-  "updateHistory": [
-    { "date": "2026-04-02", "note": "Cập nhật lần 3 — bổ sung: iOS+Android, backend services, server infra" },
-    { "date": "2026-04-02", "note": "Cập nhật lần 2 — bổ sung context: team 8 người, 9+ sản phẩm, AI products" },
-    { "date": "2026-04-02", "note": "Đánh giá ban đầu — Claude AI phân tích từ lịch sử hội thoại" }
-  ],
   "skills": [
     {
       "id": "tech-exec",
@@ -218,34 +213,115 @@
       "name": "CTO / Technical Co-Founder",
       "icon": "🏗️",
       "fit": 90,
-      "requirements": ["System architecture (86)", "Technical execution (85)", "AI products (92)", "Tooling (92)", "Team leadership (68)", "Multi-platform experience"],
-      "gaps": ["Engineering management training", "Scaling team 8 → 20+", "Investor/board communication", "Budget & P&L ownership"]
+      "requirements": [
+        "System architecture (86)",
+        "Technical execution (85)",
+        "AI products (92)",
+        "Tooling (92)",
+        "Team leadership (68)",
+        "Multi-platform experience"
+      ],
+      "gaps": [
+        "Engineering management training",
+        "Scaling team 8 → 20+",
+        "Investor/board communication",
+        "Budget & P&L ownership"
+      ]
     },
     {
       "id": "head-product",
       "name": "Head of Product / CPO",
       "icon": "🎯",
       "fit": 74,
-      "requirements": ["Multi-product management (70)", "Team leadership (68)", "Spec writing (82)", "Cross-platform strategy", "Market understanding"],
-      "gaps": ["Data-driven product decisions", "User research methodology", "Product analytics stack", "C-level stakeholder communication"]
+      "requirements": [
+        "Multi-product management (70)",
+        "Team leadership (68)",
+        "Spec writing (82)",
+        "Cross-platform strategy",
+        "Market understanding"
+      ],
+      "gaps": [
+        "Data-driven product decisions",
+        "User research methodology",
+        "Product analytics stack",
+        "C-level stakeholder communication"
+      ]
     },
     {
       "id": "indie-founder",
       "name": "Solo Founder (Indie SaaS)",
       "icon": "🚀",
       "fit": 72,
-      "requirements": ["Full-stack execution (85)", "Tooling (92)", "AI workflow (92)", "Product sense (70)"],
-      "gaps": ["Distribution & marketing (15)", "Solo revenue model", "Public presence", "Note: Thang đã vượt giai đoạn indie — đang lead team & multi-product"]
+      "requirements": [
+        "Full-stack execution (85)",
+        "Tooling (92)",
+        "AI workflow (92)",
+        "Product sense (70)"
+      ],
+      "gaps": [
+        "Distribution & marketing (15)",
+        "Solo revenue model",
+        "Public presence",
+        "Note: Thang đã vượt giai đoạn indie — đang lead team & multi-product"
+      ]
     }
   ],
   "weeklyActions": [
-    { "id": 1, "text": "Setup analytics cho Arena App (iOS/Android) — track 5 core events", "done": false, "priority": "high", "skill": "product-strategy" },
-    { "id": 2, "text": "Vẽ system architecture diagram toàn bộ ecosystem (C4 model)", "done": false, "priority": "high", "skill": "system-arch" },
-    { "id": 3, "text": "Viết RACI matrix: ownership cho 9+ products trong team 8 người", "done": false, "priority": "high", "skill": "leadership" },
-    { "id": 4, "text": "Define North Star Metric cho Arena App + ARX + CRM", "done": false, "priority": "high", "skill": "product-strategy" },
-    { "id": 5, "text": "Document AI Mission + AI Tournament architecture", "done": false, "priority": "medium", "skill": "ai-workflow" },
-    { "id": 6, "text": "Setup Docker Compose cho BE services", "done": false, "priority": "medium", "skill": "tech-exec" },
-    { "id": 7, "text": "Viết 1 LinkedIn post: lessons từ building billiard platform", "done": false, "priority": "medium", "skill": "visibility" },
-    { "id": 8, "text": "Chạy 3 user interviews với club owners", "done": false, "priority": "high", "skill": "product-strategy" }
+    {
+      "id": 1,
+      "text": "Setup analytics cho Arena App (iOS/Android) — track 5 core events",
+      "done": false,
+      "priority": "high",
+      "skill": "product-strategy"
+    },
+    {
+      "id": 2,
+      "text": "Vẽ system architecture diagram toàn bộ ecosystem (C4 model)",
+      "done": false,
+      "priority": "high",
+      "skill": "system-arch"
+    },
+    {
+      "id": 3,
+      "text": "Viết RACI matrix: ownership cho 9+ products trong team 8 người",
+      "done": false,
+      "priority": "high",
+      "skill": "leadership"
+    },
+    {
+      "id": 4,
+      "text": "Define North Star Metric cho Arena App + ARX + CRM",
+      "done": false,
+      "priority": "high",
+      "skill": "product-strategy"
+    },
+    {
+      "id": 5,
+      "text": "Document AI Mission + AI Tournament architecture",
+      "done": false,
+      "priority": "medium",
+      "skill": "ai-workflow"
+    },
+    {
+      "id": 6,
+      "text": "Setup Docker Compose cho BE services",
+      "done": false,
+      "priority": "medium",
+      "skill": "tech-exec"
+    },
+    {
+      "id": 7,
+      "text": "Viết 1 LinkedIn post: lessons từ building billiard platform",
+      "done": false,
+      "priority": "medium",
+      "skill": "visibility"
+    },
+    {
+      "id": 8,
+      "text": "Chạy 3 user interviews với club owners",
+      "done": false,
+      "priority": "high",
+      "skill": "product-strategy"
+    }
   ]
 }

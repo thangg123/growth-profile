@@ -308,15 +308,6 @@ export default function App() {
           </div>
         )}
 
-        {/* History */}
-        <div className="history-box">
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
-            <div className="mono" style={{ fontSize: 11, fontWeight: 600, color: "#475569", letterSpacing: ".05em" }}>📝 LỊCH SỬ CẬP NHẬT</div>
-            <div style={{ display: "flex", alignItems: "center", gap: 6 }}><div style={{ width: 6, height: 6, borderRadius: "50%", background: "#0ea5e9" }} /><span className="mono" style={{ fontSize: 10, color: "#334155" }}>Claude AI Analysis</span></div>
-          </div>
-          {data.updateHistory.slice(0, 10).map((h, i) => <div key={i} style={{ fontSize: 12, color: "#64748b", padding: "4px 0", display: "flex", gap: 10 }}><span className="mono" style={{ color: "#0ea5e9", flexShrink: 0 }}>{h.date}</span><span>{h.note}</span></div>)}
-        </div>
-
         <div className="footer">
           <div className="mono" style={{ fontSize: 11, color: "#1e293b" }}>Powered by {data.analyst} · Thang điểm /100 · Dữ liệu từ lịch sử hội thoại</div>
         </div>
@@ -400,8 +391,7 @@ body{background:#060a14;margin:0}
 .checkbox.checked{border-color:#22c55e;background:#22c55e}
 .prio-badge{padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600}
 
-/* History & Footer */
-.history-box{background:rgba(15,23,42,.25);border-radius:12px;padding:18px;margin-top:36px;border:1px solid rgba(148,163,184,.04)}
+/* Footer */
 .footer{text-align:center;margin-top:36px;padding:18px 0;border-top:1px solid rgba(148,163,184,.04)}
 
 /* ─── RESPONSIVE ─── */
